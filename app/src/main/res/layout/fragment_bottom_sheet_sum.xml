@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/readonlyDayStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Размен на начало дня, \u20BD:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textDayStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/readonlyDayStart"
+        tools:text = "4596,0"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/readonlyDayEnd"
+        app:layout_constraintTop_toBottomOf="@id/readonlyDayStart"
+        app:layout_constraintStart_toStartOf="@id/readonlyDayStart"
+        android:textSize="18sp"
+        android:text="Сумма на конец дня, \u20BD:"/>
+
+    <TextView
+        android:id="@+id/textDayEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/readonlyDayEnd"
+        tools:text = "4596,0"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/readonlyTotal"
+        app:layout_constraintTop_toBottomOf="@id/readonlyDayEnd"
+        app:layout_constraintStart_toStartOf="@id/readonlyDayEnd"
+        android:textSize="25sp"
+        android:text="Выручка, \u20BD:"/>
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="@+id/readonlyTotal"
+        tools:text = "4596,0"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
